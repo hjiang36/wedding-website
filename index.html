@@ -48,13 +48,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    $("#Direction, #Schedule").click(function(){
-        $(".bg").fadeTo("slow", 0.5);
-    })
-    $("#Home, img.bg").click(function(){
-        $(".bg").fadeTo("slow", 1);
-    })
-
     $(function () {
         var img = new Image();
   
@@ -67,6 +60,7 @@
             $('#loader').removeClass('loading').append(this);
             // fade our image in to create a nice effect
             $(this).fadeIn();
+            $(".navbar").show();
         })
     
         // if there was an error loading the image, react accordingly
@@ -76,7 +70,7 @@
     
         // Set the src attribute of the new image to our image
         .attr('src', 'images/cover.bmp');
-});
+    });
     </script>
 
 </body>
