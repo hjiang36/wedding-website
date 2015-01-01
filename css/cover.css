@@ -4,11 +4,6 @@ body {
 	background: none;
 }
 
-body:after{
-	display: none;
-	content: url(cover.bmp);
-}
-
 .navbar {
 	background-image: none;
 	background-color: rgba(250,240,225,0.4); !important
@@ -37,10 +32,6 @@ img.bg {
   	position: fixed;
   	top: 0;
   	left: 0;
-}
-
-html {
-	background-color: #000;
 }
 
 div.loading {
