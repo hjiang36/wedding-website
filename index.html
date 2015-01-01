@@ -43,7 +43,7 @@
         </div><!-- /.container -->
     </nav>
     </div>
-    
+
     <!-- javascripts -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -62,8 +62,9 @@
         $(img).load(function () {
             // set the image hidden by default    
             $(this).hide();
+            $(this).addClass('bg');
             // with the holding div #loader, apply:
-            $('#loader').removeClass('loading').append(this).addClass('bg');
+            $('#loader').removeClass('loading').append(this);
             // fade our image in to create a nice effect
             $(this).fadeIn();
         })
