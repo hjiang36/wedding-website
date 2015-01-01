@@ -23,13 +23,11 @@ body {
 
 img.bg {
 	/* Set rules to fill background */
-	min-height: 100%;
-  	min-width: 100%;
   	width: 100% auto;
   	height: 100% auto;
 
   	/* Set up positioning */
-  	position: fixed;
+  	position: absolute;
   	top: 0;
   	left: 0;
 }
