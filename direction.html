@@ -19,16 +19,23 @@
     <style>
       #map-outer {
         position: absolute;
-        height: 600px;
-        width:  1000px;
-        top: 50%;
-        left: 50%;
-        margin-top: -300px;
-        margin-left: -500px;
+        min-height: 500px;
+        max-height: 80%;
+        max-width:  50%;
+        top: 10%;
+        left: 10%;
+        margin-top: 100px;
+        margin-left: 80px;
         border: 2px solid #999;
         background-color:rgba(255,255,255,0.5);
       }
-	    #map-container { height: 450px; margin-top: 50px}
+	    #map-container { 
+        position: absolute;
+        height: 80%;
+        width: 55%;
+        margin-left: 35%; 
+        margin-top: 10%;
+      }
 	    @media all and (max-width: 991px) {
 		    #map-outer  { height: 650px }
 		  }
@@ -65,11 +72,12 @@
             </address>
             </div>
             <div id="map-container" class="col-md-8">
-              <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=San%20Francisco%20Airport%2C%20San%20Francisco%2C%20CA%2C%20United%20States&destination=Stanford%20Memorial%20Church%2C%20Serra%20Mall%2C%20Stanford%2C%20CA%2C%20United%20States&key=AIzaSyDdRIslGxOrOmKZrUODAXhg_m4M_QUmAgI"></iframe>
+              <iframe id="mapFrame" src="https://www.google.com/maps/embed/v1/directions?origin=San%20Francisco%20Airport%2C%20San%20Francisco%2C%20CA%2C%20United%20States&destination=Stanford%20Memorial%20Church%2C%20Serra%20Mall%2C%20Stanford%2C%20CA%2C%20United%20States&key=AIzaSyDdRIslGxOrOmKZrUODAXhg_m4M_QUmAgI"></iframe>
             </div>
           </div><!-- /map-outer -->
       </div> <!-- /row -->
     </div><!-- /container -->
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
