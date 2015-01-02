@@ -48,6 +48,12 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    $.preloadImages = function() {
+        for (var i = 0; i < arguments.length; i++) {
+            $("<img />").attr("src", arguments[i]);
+        }
+    }
+
     $(function () {
         var img = new Image();
   
@@ -70,6 +76,7 @@
     
         // Set the src attribute of the new image to our image
         .attr('src', 'images/cover.bmp');
+        $.preloadImages("images/direction_bg.jpg");
     });
     </script>
 
